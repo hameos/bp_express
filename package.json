@@ -1,0 +1,47 @@
+{
+  "name": "bp_express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "types:check": "tsc",
+    "lint:check": "eslint --ext .ts,.tsx ./src/**",
+    "lint:fix": "eslint --fix --ext .ts,.tsx ./src/**",
+    "start": "node ./node_modules/nodemon/bin/nodemon src/server.ts",
+    "dev": "export NODE_ENV=development && webpack --config ./webpack.config.js",
+    "pro": "export NODE_ENV=production && webpack --config ./webpack.config.prod.js"
+  },
+  "author": "iea",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.22",
+    "@types/uuid": "^8.3.4",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "babel-loader": "^8.2.4",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
